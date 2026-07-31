@@ -29,15 +29,4 @@ python prepare_data.py     # optional — sales_clean.csv is already included
 streamlit run app.py
 ```
 
-## Deploy on Streamlit Community Cloud
-
-1. Push this folder to GitHub (standalone repo, or as a subfolder in
-   `my-data-science-projects` — see the shared deployment guide for both options)
-2. Go to [share.streamlit.io](https://share.streamlit.io) → **New app**
-3. Pick the repo, set main file to `app.py` (or `sales-data-analysis/app.py`
-   if nested in the portfolio repo)
-4. Deploy — `sales_clean.csv` is already committed, so no data prep step
-   runs on the cloud
-
-See `DEPLOYMENT_GUIDE.md` for the full click-by-click process (same steps
-used for the Titanic project).
+## Built By MatrixRahul
