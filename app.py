@@ -11,7 +11,7 @@ st.set_page_config(page_title="Sales Data Analysis", page_icon="📊", layout="w
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/Users/macbook/sales-data-analysis/sales_clean.csv", parse_dates=["Order Date", "Ship Date"])
+    df = pd.read_csv("sales_clean.csv", parse_dates=["Order Date", "Ship Date"])
     return df
 
 df = load_data()
