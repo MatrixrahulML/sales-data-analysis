@@ -5,7 +5,7 @@ Run once before starting the app:
 """
 import pandas as pd
 
-df = pd.read_csv("/Users/macbook/sales-data-analysis/superstore.csv", encoding="latin1")
+df = pd.read_csv("superstore.csv", encoding="latin1")
 
 # ---------------------------------------------------------------
 # Clean & type columns
@@ -32,7 +32,7 @@ df["IsProfitable"] = (df["Profit"] > 0).astype(int)
 
 df = df.sort_values("Order Date").reset_index(drop=True)
 
-df.to_csv("/Users/macbook/sales-data-analysis/sales_clean.csv", index=False)
+df.to_csv("sales_clean.csv", index=False)
 
 print(f"Cleaned dataset: {df.shape[0]} rows, {df.shape[1]} columns")
 print(f"Date range: {df['Order Date'].min().date()} to {df['Order Date'].max().date()}")
